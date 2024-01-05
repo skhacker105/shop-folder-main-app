@@ -43,7 +43,7 @@ module.exports = {
           "shopFolderContact": "http://localhost:4500/remoteEntry.js"
         },
 
-        shared: {...shareAll({ singleton: true, strictVersion: true, requiredVersion: "auto" })}
+        shared: {...shareAll({ singleton: true, strictVersion: true, requiredVersion: "auto" }), 'src/assets/logo.png': { eager: true, singleton: true} }
         
     }),
     sharedMappings.getPlugin()

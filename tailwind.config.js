@@ -191,7 +191,7 @@ module.exports = {
   },
   plugins: [],
   safelist: [{
-    pattern: /(bg|background|text|leading|fill|stroke)-(default|page|contact|todo|sales|purchase|inventory|catalog|transaction|ledger)/
+    pattern: /(bg|background|text|leading|fill|stroke|logo)-(default|page|contact|todo|sales|purchase|inventory|catalog|transaction|ledger)/
   }]
 }
 
