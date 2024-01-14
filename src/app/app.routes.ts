@@ -27,7 +27,7 @@ export const routes: Routes = [
         path: 'contact',
         loadChildren: () => loadRemoteModule({
             type: 'module',
-            remoteEntry: 'http://localhost:4500/remoteEntry.js',
+            remoteEntry: 'http://localhost:4600/remoteEntry.js',
             exposedModule: './routes'
         }).then(m => m.routes)
     }
