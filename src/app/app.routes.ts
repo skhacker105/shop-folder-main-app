@@ -1,5 +1,5 @@
 import { loadRemoteModule } from '@angular-architects/module-federation';
-import { Routes } from '@angular/router';
+import { Route, Routes } from '@angular/router';
 
 export const routes: Routes = [
     {
@@ -29,6 +29,6 @@ export const routes: Routes = [
             type: 'module',
             remoteEntry: 'http://localhost:4600/remoteEntry.js',
             exposedModule: './routes'
-        }).then(m => m.routes)
+        }).then(m => m.childRoutes)
     }
 ];
