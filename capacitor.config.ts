@@ -16,15 +16,30 @@ const config: CapacitorConfig = {
       apps: [
         {
           name: 'shopFolderLogin',
-          webDir: '../shop-folder-login/dist'
+          webDir: '../shop-folder-login/dist',
+          liveUpdateConfig: {
+            appId: "abcd1234",
+            channel: "production",
+            autoUpdateMethod: "background",
+          },
         },
         {
           name: 'shopFolderHome',
-          webDir: '../shop-folder-home/dist'
+          webDir: '../shop-folder-home/dist',
+          liveUpdateConfig: {
+            appId: "133a341c",
+            channel: "production",
+            autoUpdateMethod: "background",
+          },
         },
         {
           name: 'shopFolderContact',
-          webDir: '../shop-folder-contact/dist'
+          webDir: '../shop-folder-contact/dist',
+          liveUpdateConfig: {
+            appId: "94b38408",
+            channel: "production",
+            autoUpdateMethod: "background",
+          },
         }
       ]
     }
